@@ -96,7 +96,7 @@ python eda.py analytics_results\filtered_bioactivity_data.csv
 - **Box Plots**: Generates box plots to compare pIC50, MW, LogP, number of hydrogen donors, and acceptors across different bioactivity classes.
 - **Mann-Whitney U Test**: Performs statistical tests comparing active and inactive compounds for specific descriptors (pIC50, MW, LogP, NumHDonors, NumHAcceptors) and saves the results to CSV files.
 #### Output
-The generated plots and Mann-Whitney test results are saved to the /results folder.
+- The generated plots and Mann-Whitney test results are saved to the /results folder.
 ---
 ### `padel.py`
 The `padel.py` script processes a pre-processed bioactivity dataset to generate molecular fingerprints and descriptors using the PaDEL-Descriptor tool. 
@@ -134,7 +134,7 @@ python regmodel.py padel_results\bioactivity_data_3class_pIC50_pubchem_fp.csv
 - `Model_Comparison.pdf`: Uses LazyPredict to compare a variety of regression algorithms and generates the bar plot of R-squared values for each model in `predictions_train.csv`.
 - `RMSE_Comparison_Test.pdf` and `RMSE_Comparison_Train.pdf`: Bar plots comparing the RMSE values if the models.
 - `time_traken_train_comparison.pdf` and `time_taken_test_comparison.pdf`: Comparison of time taken by models on training and test data.
----
+
 ## How It Works
 ### Step 1.1: Target Search
 - The script uses the **ChEMBL API** to search for a specific biological target using a query (e.g., "coronavirus"). The API returns a list of matching target, and the user can select one of them.
@@ -202,11 +202,15 @@ python regmodel.py padel_results\bioactivity_data_3class_pIC50_pubchem_fp.csv
 ### Step 5.4 RMSE Comparison
 - To visually compare the models based on their RMSE scores, RMSE bar plots are generated for both training and test sets.
 
-### Time Taken Comparison
+### Step 5.5 Time Taken Comparison
 - Generates bar plots comparing the time taken for each model on the training and test datasets.
----
 
 ## License
 This project is licensed under the MIT license - see the [LICENSE](LICENCE) file for details. 
----
+
+## Contact
+For questions, suggestions, or feedback, feel free to reach out!
+
+- **GitHub**: [Axiomaa](https://github.com/Axiomaa)
+- **Email**: [axiomatechlab@gmail.com](mailto:axiomatechlab@gmail.com)
 
